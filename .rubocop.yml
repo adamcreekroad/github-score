@@ -1,0 +1,12 @@
+AllCops:
+  TargetRubyVersion: 3.1.0
+
+Metrics/BlockLength:
+  CountAsOne: ['array', 'hash', 'heredoc']
+  ExcludedMethods:
+    - context
+    - shared_examples
+    - describe
+
+Style/Documentation:
+  Enabled: false
