@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'faraday'
-require 'multi_json'
-
 module Github
   class Client
     class NotFoundError < StandardError; end
