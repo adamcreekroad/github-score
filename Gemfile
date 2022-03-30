@@ -7,7 +7,7 @@ ruby '3.1.0'
 # dependencies
 gem 'faraday'
 gem 'multi_json'
-gem 'rake'
+gem 'thor'
 
 # dev dependencies
 gem 'byebug'
