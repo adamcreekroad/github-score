@@ -6,11 +6,13 @@
 # This removes some boilerplate from services by removing the need to define an initializer and
 # attribute accessors.
 class Service
-  def self.call(**args)
-    new(**args).call
+  # @param params [Hash]
+  def self.call(params = {})
+    new(params).call
   end
 
-  def initialize(params = {})
+  # @param params [Hash]
+  def initialize(params)
     @__params = params
   end
 
